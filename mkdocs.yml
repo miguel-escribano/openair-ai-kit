@@ -1,0 +1,76 @@
+site_name: openair-ai-kit
+site_description: AI-driven air quality charting and analysis via MCP, powered by the R openair package.
+site_url: https://openair-ai-kit.readthedocs.io/
+repo_url: https://github.com/miguel-escribano/openair-ai-kit
+repo_name: openair-ai-kit
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - Installation: getting-started/installation.md
+      - Quickstart: getting-started/quickstart.md
+      - Concepts: getting-started/concepts.md
+  - User guide:
+      - CSV / Excel on server disk: user-guide/ingest-local.md
+      - Local file + remote MCP: user-guide/ingest-local-export.md
+      - Public networks (AURN / EU): user-guide/ingest-network.md
+      - Chaining another MCP: user-guide/multi-mcp.md
+      - Transports (stdio / HTTP / remote): user-guide/remote-setup.md
+  - Reference:
+      - Tool catalog: reference/tools.md
+      - Testing tiers: reference/testing.md
+      - Architecture: reference/architecture.md
+  - About:
+      - Citation: about/citation.md
+      - Contributing: about/contributing.md
+      - Changelog: about/changelog.md
+      - License: about/license.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/miguel-escribano

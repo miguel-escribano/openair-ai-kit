@@ -1,5 +1,7 @@
 # openair-ai-kit
 
+📖 **[Full documentation](https://openair-ai-kit.readthedocs.io/)** — installation, user guide, tool catalog, architecture.
+
 Air quality researchers and practitioners already have the data — sensor exports, monitoring station downloads, AURN archives, government portals. The friction is turning that data into a publication-grade openair chart without leaving your AI workflow. This kit removes that step: raw CSV, Excel, or public network data in, deterministic openair output out, via any MCP-capable client you already use — IDEs, Claude Desktop, ChatGPT, or agents you build — alongside your usual R scripts and notebooks.
 
 Built on **[openair](https://github.com/openair-project/openair)** (MIT) — a server (Python + R) and an IDE plugin (skills, agent, MCP config). **Not affiliated** with [openair-project](https://github.com/openair-project) maintainers.
