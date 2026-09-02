@@ -55,6 +55,7 @@ Start with [Getting started → Installation](getting-started/installation.md).
 | **VS Code + remote MCP** | [Quickstart](getting-started/quickstart.md) — uses the committed `felisa_munarriz.json` fixture, no Excel hunt |
 | **Plot picker** | [Tool catalog](reference/tools.md) |
 | **Server dev only** | `pytest` + `check_integrations.py` in the server repo — pre-deploy, not a substitute for the harness |
+| **Skeptical?** | [`reproductions/`](https://github.com/miguel-escribano/openair-3-mcp-client-plugin-oss/tree/main/reproductions) — a runnable script reproducing the openair book's own Marylebone Road NOx polar plot, no chat model involved |
 
 ## Scope
 
