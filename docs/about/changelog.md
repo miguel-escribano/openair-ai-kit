@@ -5,6 +5,12 @@ Each repo keeps its own changelog — they version together, so release notes ar
 - [openair-3-mcp-server-oss/CHANGELOG.md](https://github.com/miguel-escribano/openair-3-mcp-server-oss/blob/main/CHANGELOG.md)
 - [openair-3-mcp-client-plugin-oss/CHANGELOG.md](https://github.com/miguel-escribano/openair-3-mcp-client-plugin-oss/blob/main/CHANGELOG.md)
 
+## v0.2.5 (2026-11-20) — time_variation short windows (server)
+
+**Server:** **[v0.2.5](https://github.com/miguel-escribano/openair-3-mcp-server-oss/releases/tag/v0.2.5)** — `time_variation` omits the monthly panel when the series span is under 60 days.
+
+**Plugin:** **[v0.2.5](https://github.com/miguel-escribano/openair-3-mcp-client-plugin-oss/releases/tag/v0.2.5)** — version pairing only.
+
 ## v0.2.4 (2026-11-20) — time_plot axis units (server)
 
 **Server:** **[v0.2.4](https://github.com/miguel-escribano/openair-3-mcp-server-oss/releases/tag/v0.2.4)** — `time_plot` passes `ylab` from series units and human-readable `name.pol` (same idea as `time_variation`). Deploy via `mcp-deployer` on the MCP host.
