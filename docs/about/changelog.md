@@ -5,6 +5,12 @@ Each repo keeps its own changelog — they version together, so release notes ar
 - [openair-3-mcp-server-oss/CHANGELOG.md](https://github.com/miguel-escribano/openair-3-mcp-server-oss/blob/main/CHANGELOG.md)
 - [openair-3-mcp-client-plugin-oss/CHANGELOG.md](https://github.com/miguel-escribano/openair-3-mcp-client-plugin-oss/blob/main/CHANGELOG.md)
 
+## v0.2.4 (2026-11-20) — time_plot axis units (server)
+
+**Server:** **[v0.2.4](https://github.com/miguel-escribano/openair-3-mcp-server-oss/releases/tag/v0.2.4)** — `time_plot` passes `ylab` from series units and human-readable `name.pol` (same idea as `time_variation`). Deploy via `mcp-deployer` on the MCP host.
+
+**Plugin:** **[v0.2.4](https://github.com/miguel-escribano/openair-3-mcp-client-plugin-oss/releases/tag/v0.2.4)** — version/docs pairing only; skills unchanged. Use server ≥ 0.2.4 for correct Y-axis units on time series plots.
+
 ## v0.2.3 (2026-11-20) — production pin (server)
 
 **Ship this on the MCP host:** server tag **[v0.2.3](https://github.com/miguel-escribano/openair-3-mcp-server-oss/releases/tag/v0.2.3)**. Includes Oleada B (v0.2.1) plus openair 3.2 smoke fixes (v0.2.2–0.2.3): `dist_plot` (tibble + `title`), `import_meta` (`code=` for site codes like `MY1`), `import_ukaq` (`source=` not `network=`).
