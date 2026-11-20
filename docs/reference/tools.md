@@ -1,6 +1,6 @@
 # Tool catalog
 
-45 tools total — 37 R-backed (plots, imports, stats) plus 8 Python pipeline tools. Plot tools return `[text, image]` MCP blocks so clients show the chart inline; stats tools return structured JSON. Full descriptions live in the [server README](https://github.com/miguel-escribano/openair-3-mcp-server-oss#available-tools) — condensed by category here.
+46 tools total — 38 R-backed (plots, imports, stats) plus 8 Python pipeline tools. Plot tools return `[text, image]` MCP blocks so clients show the chart inline; stats tools return structured JSON. Full descriptions live in the [server README](https://github.com/miguel-escribano/openair-3-mcp-server-oss#available-tools) — condensed by category here.
 
 ## Pipeline (Python)
 
