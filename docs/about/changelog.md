@@ -5,15 +5,21 @@ Each repo keeps its own changelog — they version together, so release notes ar
 - [openair-3-mcp-server-oss/CHANGELOG.md](https://github.com/miguel-escribano/openair-3-mcp-server-oss/blob/main/CHANGELOG.md)
 - [openair-3-mcp-client-plugin-oss/CHANGELOG.md](https://github.com/miguel-escribano/openair-3-mcp-client-plugin-oss/blob/main/CHANGELOG.md)
 
+## v0.2.3 (2026-11-20) — production pin (server)
+
+**Ship this on the MCP host:** server tag **[v0.2.3](https://github.com/miguel-escribano/openair-3-mcp-server-oss/releases/tag/v0.2.3)**. Includes Oleada B (v0.2.1) plus openair 3.2 smoke fixes (v0.2.2–0.2.3): `dist_plot` (tibble + `title`), `import_meta` (`code=` for site codes like `MY1`), `import_ukaq` (`source=` not `network=`).
+
+**Verified on `mcp.miguel-escribano.com`:** Felisa harness **12/12 + 4/4**; `check_integrations` **46 pass / 6 skip / 3 fail** (known: discontinued `import_europe`, `import_traj` 404, `mod_stats` single-series fixture).
+
+**Plugin:** **[v0.2.1](https://github.com/miguel-escribano/openair-3-mcp-client-plugin-oss/releases/tag/v0.2.1)** — docs/skills still valid; pair with server ≥ 0.2.3.
+
 ## v0.2.1 (2026-11-20) — dist_plot, themes, importMeta filters
 
-Binomio release for openair 3.2 feature parity on the MCP surface.
+Oleada B: openair 3.2 feature parity on the MCP surface.
 
-**Server:** new `dist_plot`; optional `plot_options.theme` / `meta.theme` on all image tools; `import_meta` forwards `importMeta()` 3.2 filters (distance search, pollutants, year, …). **38** R-backed tools.
+**Server:** new `dist_plot`; optional `plot_options.theme` / `meta.theme` on all image tools; `import_meta` forwards `importMeta()` 3.2 filters (distance search, `meta_pollutant`, year, …). **38** R-backed tools (**46** tools total with Python pipeline).
 
 **Plugin:** skills and plot catalog updated (`prepare-plot`, `ingest-network`).
-
-Hosted users: pull tags **v0.2.1** on server and plugin; `health_r` after deploy completes.
 
 ## v0.2.0 (2026-11-20) — openair 3.2.0 on the server host
 
